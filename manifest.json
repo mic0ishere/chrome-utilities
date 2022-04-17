@@ -1,0 +1,25 @@
+{
+    "name": "Website Fixes",
+    "manifest_version": 3,
+    "description": "Extension which fixes some website bugs and improves their functionality.",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://open.spotify.com/*"
+            ],
+            "js": [
+                "lib/spotifyNowPlayingFix.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.brainly.pl/*",
+                "https://*.brainly.com/*"
+            ],
+            "js": [
+                "lib/brainlyBypass.js"
+            ]
+        }
+    ]
+}
